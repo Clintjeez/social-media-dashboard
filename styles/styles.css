@@ -96,6 +96,17 @@ body{
 }
 
 
+.stats-col{
+    background-color: hsl(227, 47%, 96%);
+    padding: 20px;
+    width: 220px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+
 
 
 /* Toggle checkbos style */
