@@ -27,14 +27,18 @@
     </style>
   </head>
   <body>
-    <section id="header-wrapper">
+    <!-- Top Header section -->
+    <section id="header">
       <div class="container">
-        <div class="top-bar">
-          <div class="head-txt">
+        <div class="header-wrapper">
+
+          <!-- Title text -->
+          <div class="title-txt">
             <h1>Social Media Dashboard</h1>
             <p>Total Followers: 23,004</p>
           </div>
-          <div class="ui-mode">
+          <!-- UI toggle light mode default -->
+          <div class="ui-toggle">
             <span>Dark Mode</span>
             <label class="switch">
               <input type="checkbox">
@@ -43,77 +47,124 @@
           </div>
         </div>
 
-
-      <div class="stats-wrapper">
+<!-- Top header large cards  wrapper start-->
+      <div class="header-stats">
         <div class="stats-row">
-          <div class="stats-col-main facebook">
-            <img src="/images/icon-facebook.svg" alt=""> 
-            <span>@nathanf</span>
+          <!-- Lg-cards -->
+          <div class="stats-card-lg facebook">
+            <p class="stats-data"><img src="/images/icon-facebook.svg" alt=""> @nathanf</p>
             <h2>1987</h2>
-            <p>Followers</p>
-            <span><img src="/images/icon-up.svg" alt=""> 12 Today</span>
+            <p class="lite-txt">Followers</p>
+            <p class="duration green"><img src="/images/icon-up.svg" alt=""> 12 Today</p>
           </div>
 
-          <div class="stats-col-main twitter">
-            <img src="/images/icon-twitter.svg" alt="">
-            <span>@nathanf</span>
+          <div class="stats-card-lg twitter">
+            <p class="stats-data"><img src="/images/icon-twitter.svg" alt=""> @nathanf</p>
             <h2>1044</h2>
-            <p>Followers</p>
-            <span><img src="/images/icon-up.svg" alt=""> 99 Today</span>
+            <p class="lite-txt">Followers</p>
+            <p class="duration green"><img src="/images/icon-up.svg" alt=""> 99 Today</p>
           </div>
 
-          <div class="stats-col-main instagram">
-            <img src="/images/icon-instagram.svg" alt="">
-            <span>@realnathanf</span>
+          <div class="stats-card-lg instagram">
+            <p class="stats-data"><img src="/images/icon-instagram.svg" alt=""> @realnathanf</p>
             <h2>11k</h2>
-            <p>Followers</p>
-            <span><img src="/images/icon-up.svg" alt=""> 1099 Today</span>
+            <p class="lite-txt">Followers</p>
+            <p class="duration green"><img src="/images/icon-up.svg" alt=""> 1099 Today</p>
           </div>
 
-          <div class="stats-col-main youtube">
-            <img src="/images/icon-youtube.svg" alt="">
-            <span>Nathan F.</span>
+          <div class="stats-card-lg youtube">
+            <p class="stats-data"><img src="/images/icon-youtube.svg" alt=""> Nathan F.</p>
             <h2>8239</h2>
-            <p>Subscribers</p>
-            <span><img src="/images/icon-down.svg" alt=""> 144 Today</span>
+            <p class="lite-txt">Subscribers</p>
+            <p class="duration red"><img src="/images/icon-down.svg" alt=""> 144 Today</p>
           </div>
+          <!-- Lg-cards -->
         </div>
-  </div>
-        
+      </div>
+        <!-- Top header large cards  wrapper end-->
       </div>
     </section>
+    <!-- Top header section end -->
 
+  <!-- Overview section start -->
     <section id="overview-wrapper">
       <div class="container">
         <h1>Overview - Today</h1>
-
         <div class="stats-row">
           <div class="stats-col">
               <p>Page Views</p>
               <img src="/images/icon-facebook.svg" alt="">
-              <p>87</p>
-              <span><img src="/images/icon-up.svg" alt="">3%</span>
+              <p class="bold-txt">87</p>
+            <span><img src="/images/icon-up.svg" alt="">
+              <p class="green">3%</p>
+            </span>
           </div>
 
           <div class="stats-col">
-            <p>Page Views</p>
-            <img src="/images/icon-facebook.svg" alt="">
-            <p>87</p>
-            <span><img src="/images/icon-up.svg" alt="">3%</span>
+              <p>Page Views</p>
+              <img src="/images/icon-facebook.svg" alt="">
+              <p class="bold-txt">52</p>
+            <span><img src="/images/icon-down.svg" alt="">
+              <p class="red">2%</p>
+            </span>
         </div>
 
         <div class="stats-col">
-          <p>Page Views</p>
-          <img src="/images/icon-facebook.svg" alt="">
-          <p>87</p>
-          <span><img src="/images/icon-up.svg" alt="">3%</span>
+            <p>Likes</p>
+            <img src="/images/icon-instagram.svg" alt="">
+            <p class="bold-txt">5462</p>
+          <span><img src="/images/icon-up.svg" alt="">
+            <p class="green">2257%</p>
+          </span>
       </div>
 
       <div class="stats-col">
-        <p>Page Views</p>
-        <img src="/images/icon-facebook.svg" alt="">
-        <p>87</p>
-        <span><img src="/images/icon-up.svg" alt="">3%</span>
+          <p>Page Views</p>
+          <img src="/images/icon-instagram.svg" alt="">
+          <p class="bold-txt">52k</p>
+        <span><img src="/images/icon-up.svg" alt="">
+          <p class="green">1375%</p>
+        </span>
+    </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stats-col">
+              <p>Retweets</p>
+              <span class="img-wrapper">
+                <img src="/images/icon-twitter.svg" alt="">
+              </span>
+              <p class="bold-txt">117</p>
+            <span><img src="/images/icon-up.svg" alt="">
+              <p class="green">303%</p>
+            </span>
+          </div>
+
+          <div class="stats-col">
+              <p>Likes</p>
+              <img src="/images/icon-twitter.svg" alt="">
+              <p class="bold-txt">507</p>
+            <span><img src="/images/icon-up.svg" alt="">
+              <p class="green">553%</p>
+            </span>
+        </div>
+
+        <div class="stats-col">
+            <p>Likes</p>
+            <img src="/images/icon-youtube.svg" alt="">
+            <p class="bold-txt">107</p>
+          <span><img src="/images/icon-down.svg" alt="">
+            <p class="red">19%</p>
+          </span>
+      </div>
+
+      <div class="stats-col">
+          <p>Total Views</p>
+          <img src="/images/icon-youtube.svg" alt="">
+          <p class="bold-txt">1407</p>
+        <span><img src="/images/icon-down.svg" alt="">
+          <p class="red">12%</p>
+        </span>
     </div>
         </div>
       </div>
