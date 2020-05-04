@@ -15,7 +15,12 @@
     <title>Frontend Mentor | [Challenge Name Here]</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <link rel="stylesheet" type="text/css" href="/styles/light-theme.css" id="style">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/styles/light-theme.css"
+      id="style"
+    />
     <style>
       .attribution {
         font-size: 11px;
@@ -31,7 +36,6 @@
     <section id="header">
       <div class="container">
         <div class="header-wrapper">
-
           <!-- Title text -->
           <div class="title-txt">
             <h1>Social Media Dashboard</h1>
@@ -41,53 +45,68 @@
           <div class="ui-toggle">
             <p class="mode-tag">Dark Mode</p>
             <label class="switch">
-              <input type="checkbox" id="input">
+              <input type="checkbox" id="input" />
               <span class="slider round" id="slider"></span>
             </label>
           </div>
         </div>
 
-<!-- Top header large cards  wrapper start-->
-      <div class="header-stats">
-        <div class="stats-row">
-          <!-- Lg-cards -->
-          <div class="stats-card-lg facebook">
-            <p class="stats-data"><img src="/images/icon-facebook.svg" alt=""> @nathanf</p>
-            <h2>1987</h2>
-            <p class="lite-txt">Followers</p>
-            <p class="duration green"><img src="/images/icon-up.svg" alt=""> 12 Today</p>
-          </div>
+        <!-- Top header large cards  wrapper start-->
+        <div class="header-stats">
+          <div class="stats-row">
+            <!-- Lg-cards -->
+            <div class="stats-card-lg facebook">
+              <p class="stats-data">
+                <img src="/images/icon-facebook.svg" alt="" /> @nathanf
+              </p>
+              <h2>1987</h2>
+              <p class="lite-txt">Followers</p>
+              <p class="duration green">
+                <img src="/images/icon-up.svg" alt="" /> 12 Today
+              </p>
+            </div>
 
-          <div class="stats-card-lg twitter">
-            <p class="stats-data"><img src="/images/icon-twitter.svg" alt=""> @nathanf</p>
-            <h2>1044</h2>
-            <p class="lite-txt">Followers</p>
-            <p class="duration green"><img src="/images/icon-up.svg" alt=""> 99 Today</p>
-          </div>
+            <div class="stats-card-lg twitter">
+              <p class="stats-data">
+                <img src="/images/icon-twitter.svg" alt="" /> @nathanf
+              </p>
+              <h2>1044</h2>
+              <p class="lite-txt">Followers</p>
+              <p class="duration green">
+                <img src="/images/icon-up.svg" alt="" /> 99 Today
+              </p>
+            </div>
 
-          <div class="stats-card-lg instagram">
-            <p class="stats-data"><img src="/images/icon-instagram.svg" alt=""> @realnathanf</p>
-            <h2>11k</h2>
-            <p class="lite-txt">Followers</p>
-            <p class="duration green"><img src="/images/icon-up.svg" alt=""> 1099 Today</p>
-          </div>
+            <div class="stats-card-lg instagram">
+              <p class="stats-data">
+                <img src="/images/icon-instagram.svg" alt="" /> @realnathanf
+              </p>
+              <h2>11k</h2>
+              <p class="lite-txt">Followers</p>
+              <p class="duration green">
+                <img src="/images/icon-up.svg" alt="" /> 1099 Today
+              </p>
+            </div>
 
-          <div class="stats-card-lg youtube">
-            <p class="stats-data"><img src="/images/icon-youtube.svg" alt=""> Nathan F.</p>
-            <h2>8239</h2>
-            <p class="lite-txt">Subscribers</p>
-            <p class="duration red"><img src="/images/icon-down.svg" alt=""> 144 Today</p>
+            <div class="stats-card-lg youtube">
+              <p class="stats-data">
+                <img src="/images/icon-youtube.svg" alt="" /> Nathan F.
+              </p>
+              <h2>8239</h2>
+              <p class="lite-txt">Subscribers</p>
+              <p class="duration red">
+                <img src="/images/icon-down.svg" alt="" /> 144 Today
+              </p>
+            </div>
+            <!-- Lg-cards -->
           </div>
-          <!-- Lg-cards -->
         </div>
-      </div>
         <!-- Top header large cards  wrapper end-->
       </div>
     </section>
     <!-- Top header section end -->
 
-
-  <!-- Overview section start -->
+    <!-- Overview section start -->
     <section id="overview-wrapper">
       <div class="container">
         <h1>Overview - Today</h1>
@@ -95,92 +114,94 @@
           <div class="stats-card-sm">
             <div class="stats-info">
               <p class="tag-txt">Page Views</p>
-              <img src="/images/icon-facebook.svg" alt="">
+              <img src="/images/icon-facebook.svg" alt="" />
             </div>
-              <div class="stats-info">
-                <p class="bold-txt">87</p>
-                <p class="green"><img src="/images/icon-up.svg" alt=""> 3%</p>
-              </div>
+            <div class="stats-info">
+              <p class="bold-txt">87</p>
+              <p class="green"><img src="/images/icon-up.svg" alt="" /> 3%</p>
+            </div>
           </div>
 
           <div class="stats-card-sm">
             <div class="stats-info">
               <p class="tag-txt">Page Views</p>
-              <img src="/images/icon-facebook.svg" alt="">
-            </div>
-              <div class="stats-info">
-                <p class="bold-txt">52</p>
-                <p class="red"><img src="/images/icon-down.svg" alt="">2%</p>
-              </div>
-        </div>
-
-        <div class="stats-card-sm">
-          <div class="stats-info">
-            <p class="tag-txt">Likes</p>
-            <img src="/images/icon-instagram.svg" alt="">
-          </div>
-           <div class="stats-info">
-            <p class="bold-txt">5462</p>
-            <p class="green"><img src="/images/icon-up.svg" alt="">2257%</p>
-           </div>
-      </div>
-
-      <div class="stats-card-sm">
-        <div class="stats-info">
-          <p class="tag-txt">Page Views</p>
-          <img src="/images/icon-instagram.svg" alt="">
-        </div>
-          <div class="stats-info">
-            <p class="bold-txt">52k</p>
-            <p class="green"> <img src="/images/icon-up.svg" alt=""> 1375%</p>
-          </div>
-    </div>
-        </div>
-
-        <div class="stats-row">
-          <div class="stats-card-sm">
-            <div class="stats-info">
-              <p class="tag-txt">Retweets</p>
-              <img src="/images/icon-twitter.svg" alt="">
+              <img src="/images/icon-facebook.svg" alt="" />
             </div>
             <div class="stats-info">
-                <p class="bold-txt">117</p>
-                <p class="green"><img src="/images/icon-up.svg" alt="">303%</p>
+              <p class="bold-txt">52</p>
+              <p class="red"><img src="/images/icon-down.svg" alt="" />2%</p>
             </div>
           </div>
 
           <div class="stats-card-sm">
             <div class="stats-info">
               <p class="tag-txt">Likes</p>
-              <img src="/images/icon-twitter.svg" alt="">
+              <img src="/images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="stats-info">
+              <p class="bold-txt">5462</p>
+              <p class="green"><img src="/images/icon-up.svg" alt="" />2257%</p>
+            </div>
+          </div>
+
+          <div class="stats-card-sm">
+            <div class="stats-info">
+              <p class="tag-txt">Page Views</p>
+              <img src="/images/icon-instagram.svg" alt="" />
+            </div>
+            <div class="stats-info">
+              <p class="bold-txt">52k</p>
+              <p class="green">
+                <img src="/images/icon-up.svg" alt="" /> 1375%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-row">
+          <div class="stats-card-sm">
+            <div class="stats-info">
+              <p class="tag-txt">Retweets</p>
+              <img src="/images/icon-twitter.svg" alt="" />
+            </div>
+            <div class="stats-info">
+              <p class="bold-txt">117</p>
+              <p class="green"><img src="/images/icon-up.svg" alt="" />303%</p>
+            </div>
+          </div>
+
+          <div class="stats-card-sm">
+            <div class="stats-info">
+              <p class="tag-txt">Likes</p>
+              <img src="/images/icon-twitter.svg" alt="" />
             </div>
             <div class="stats-info">
               <p class="bold-txt">507</p>
-              <p class="green"><img src="/images/icon-up.svg" alt="">553%</p>
-            </div>  
-        </div>
-
-        <div class="stats-card-sm">
-          <div class="stats-info">
-            <p class="tag-txt">Likes</p>
-            <img src="/images/icon-youtube.svg" alt="">
+              <p class="green"><img src="/images/icon-up.svg" alt="" />553%</p>
+            </div>
           </div>
-           <div class="stats-info">
-            <p class="bold-txt">107</p>
-            <p class="red"><img src="/images/icon-down.svg" alt="">19%</p> 
-           </div>   
-      </div>
 
-      <div class="stats-card-sm">
-        <div class="stats-info">
-          <p class="tag-txt">Total Views</p>
-          <img src="/images/icon-youtube.svg" alt="">
-        </div>
-          <div class="stats-info">
-            <p class="bold-txt">1407</p>
-            <p class="red"><img src="/images/icon-down.svg" alt="">12%</p>
+          <div class="stats-card-sm">
+            <div class="stats-info">
+              <p class="tag-txt">Likes</p>
+              <img src="/images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="stats-info">
+              <p class="bold-txt">107</p>
+              <p class="red"><img src="/images/icon-down.svg" alt="" />19%</p>
+            </div>
           </div>
-      </div>
+
+          <div class="stats-card-sm">
+            <div class="stats-info">
+              <p class="tag-txt">Total Views</p>
+              <img src="/images/icon-youtube.svg" alt="" />
+            </div>
+            <div class="stats-info">
+              <p class="bold-txt">1407</p>
+              <p class="red"><img src="/images/icon-down.svg" alt="" />12%</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
