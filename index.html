@@ -15,7 +15,7 @@
     <title>Frontend Mentor | [Challenge Name Here]</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles/light-theme.css" id="style">
     <style>
       .attribution {
         font-size: 11px;
@@ -39,10 +39,10 @@
           </div>
           <!-- UI toggle light mode default -->
           <div class="ui-toggle">
-            <span>Dark Mode</span>
+            <p class="mode-tag">Dark Mode</p>
             <label class="switch">
-              <input type="checkbox">
-              <span class="slider round"></span>
+              <input type="checkbox" id="input">
+              <span class="slider round" id="slider"></span>
             </label>
           </div>
         </div>
@@ -86,86 +86,101 @@
     </section>
     <!-- Top header section end -->
 
+
   <!-- Overview section start -->
     <section id="overview-wrapper">
       <div class="container">
         <h1>Overview - Today</h1>
         <div class="stats-row">
-          <div class="stats-col">
-              <p>Page Views</p>
+          <div class="stats-card-sm">
+            <div class="stats-info">
+              <p class="tag-txt">Page Views</p>
               <img src="/images/icon-facebook.svg" alt="">
-              <p class="bold-txt">87</p>
-            <span><img src="/images/icon-up.svg" alt="">
-              <p class="green">3%</p>
-            </span>
+            </div>
+              <div class="stats-info">
+                <p class="bold-txt">87</p>
+                <p class="green"><img src="/images/icon-up.svg" alt=""> 3%</p>
+              </div>
           </div>
 
-          <div class="stats-col">
-              <p>Page Views</p>
+          <div class="stats-card-sm">
+            <div class="stats-info">
+              <p class="tag-txt">Page Views</p>
               <img src="/images/icon-facebook.svg" alt="">
-              <p class="bold-txt">52</p>
-            <span><img src="/images/icon-down.svg" alt="">
-              <p class="red">2%</p>
-            </span>
+            </div>
+              <div class="stats-info">
+                <p class="bold-txt">52</p>
+                <p class="red"><img src="/images/icon-down.svg" alt="">2%</p>
+              </div>
         </div>
 
-        <div class="stats-col">
-            <p>Likes</p>
+        <div class="stats-card-sm">
+          <div class="stats-info">
+            <p class="tag-txt">Likes</p>
             <img src="/images/icon-instagram.svg" alt="">
+          </div>
+           <div class="stats-info">
             <p class="bold-txt">5462</p>
-          <span><img src="/images/icon-up.svg" alt="">
-            <p class="green">2257%</p>
-          </span>
+            <p class="green"><img src="/images/icon-up.svg" alt="">2257%</p>
+           </div>
       </div>
 
-      <div class="stats-col">
-          <p>Page Views</p>
+      <div class="stats-card-sm">
+        <div class="stats-info">
+          <p class="tag-txt">Page Views</p>
           <img src="/images/icon-instagram.svg" alt="">
-          <p class="bold-txt">52k</p>
-        <span><img src="/images/icon-up.svg" alt="">
-          <p class="green">1375%</p>
-        </span>
+        </div>
+          <div class="stats-info">
+            <p class="bold-txt">52k</p>
+            <p class="green"> <img src="/images/icon-up.svg" alt=""> 1375%</p>
+          </div>
     </div>
         </div>
 
         <div class="stats-row">
-          <div class="stats-col">
-              <p>Retweets</p>
-              <span class="img-wrapper">
-                <img src="/images/icon-twitter.svg" alt="">
-              </span>
-              <p class="bold-txt">117</p>
-            <span><img src="/images/icon-up.svg" alt="">
-              <p class="green">303%</p>
-            </span>
+          <div class="stats-card-sm">
+            <div class="stats-info">
+              <p class="tag-txt">Retweets</p>
+              <img src="/images/icon-twitter.svg" alt="">
+            </div>
+            <div class="stats-info">
+                <p class="bold-txt">117</p>
+                <p class="green"><img src="/images/icon-up.svg" alt="">303%</p>
+            </div>
           </div>
 
-          <div class="stats-col">
-              <p>Likes</p>
+          <div class="stats-card-sm">
+            <div class="stats-info">
+              <p class="tag-txt">Likes</p>
               <img src="/images/icon-twitter.svg" alt="">
+            </div>
+            <div class="stats-info">
               <p class="bold-txt">507</p>
-            <span><img src="/images/icon-up.svg" alt="">
-              <p class="green">553%</p>
-            </span>
+              <p class="green"><img src="/images/icon-up.svg" alt="">553%</p>
+            </div>  
         </div>
 
-        <div class="stats-col">
-            <p>Likes</p>
+        <div class="stats-card-sm">
+          <div class="stats-info">
+            <p class="tag-txt">Likes</p>
             <img src="/images/icon-youtube.svg" alt="">
+          </div>
+           <div class="stats-info">
             <p class="bold-txt">107</p>
-          <span><img src="/images/icon-down.svg" alt="">
-            <p class="red">19%</p>
-          </span>
+            <p class="red"><img src="/images/icon-down.svg" alt="">19%</p> 
+           </div>   
       </div>
 
-      <div class="stats-col">
-          <p>Total Views</p>
+      <div class="stats-card-sm">
+        <div class="stats-info">
+          <p class="tag-txt">Total Views</p>
           <img src="/images/icon-youtube.svg" alt="">
-          <p class="bold-txt">1407</p>
-        <span><img src="/images/icon-down.svg" alt="">
-          <p class="red">12%</p>
-        </span>
-    </div>
+        </div>
+          <div class="stats-info">
+            <p class="bold-txt">1407</p>
+            <p class="red"><img src="/images/icon-down.svg" alt="">12%</p>
+          </div>
+      </div>
         </div>
       </div>
     </section>
@@ -242,5 +257,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

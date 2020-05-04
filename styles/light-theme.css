@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.red{
+    color: #c4032a;
+}
+.green{
+    color: #1db489;
+}
+.facebook{
+    border-top: 3px solid #00bfff;
+}
+.twitter{
+    border-top: 3px solid #1ca0f2;
+}
+.instagram{
+    border-top: 3px solid  #df4996;
+}
+.youtube{
+    border-top: 3px solid #c4032a;
+}
+
+
+/* Styles for light goes here ======================*/
+
+.light-theme{
+    background-color: #fff;
+    color: #63687e;
+}
+
+/* Header and titles styling goes here */
+#header{
+    background-color:  #f5f7ff;
+    margin: 0;
+    height: 260px;
+}
+.header-wrapper{
+    height: 100px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.title-txt{
+    padding-top: 20px;
+}
+
+
+/* UI toggler slider styling */
+.ui-toggle{
+    padding-top: 20px;
+    display: flex;
+}
+.ui-toggle .mode-tag{
+    margin: 10px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: linear gradient rgb(55, 143, 230) to rgb(62, 218, 130);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px linear gradient rgb(55, 143, 230) to rgb(62, 218, 130);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }  
+
+
+/* Top header large cards start*/
+.header-stats{
+   margin-top: 40px;
+}
+.stats-row{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
+.stats-card-lg{
+    background-color: #f0f2fa;
+    text-align: center;
+    padding: 20px;
+    width: 220px;  
+    border-radius: 5px;  
+}
+.stats-card-lg:hover{
+    background: #ced1da;
+}
+.stats-card-lg .stats-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stats-data img{
+    padding-right: 10px;
+}
+.stats-card-lg h2{
+    font-size: 55px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 0;
+}
+.stats-card-lg .lite-txt{
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    color: #63687e; 
+    margin-bottom: 35px;
+}
+/* Top header large cards end*/
+
+/*Overview section  start*/
+#overview-wrapper{
+    margin-top: 200px;
+}
+#overview-wrapper h1{
+    font-size: 28px;
+    color: #63687e;
+}
+.stats-card-sm{
+    background-color: hsl(227, 47%, 96%);
+    padding: 15px;
+    margin-top: 30px;
+    width: 220px;
+    border-radius: 5px;
+}
+.stats-card-sm:hover{
+    background: #ced1da;
+}
+ .stats-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.stats-card-sm img{
+    vertical-align: middle;
+}
+.stats-info .bold-txt{
+    font-weight: bold;
+    font-size: 35px;
+}
+.stats-col img{
+    padding-left: 130px;
+}
+.stats-col span{
+    margin-top: 60px;
+    text-align: right;
+}
+.stats-col span p{
+    display: inline;
+}
+
+.attribution{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Mobile view responsive style ======================*/
+@media(max-width: 1400px){
+    /* Header mobile style */
+    #header{
+        height: 300px; 
+    }
+    .header-wrapper{
+        flex-direction: column;
+    }
+    .title-txt{
+       border-bottom: #63687e solid 2px;
+       padding-bottom: 25px;
+    }
+    .ui-toggle{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 25px;
+    }
+
+    /* Header cards mobile style */
+    .header-stats{
+        margin-top: 60px;
+        height: 600px;
+    }
+    .stats-row{
+        grid-template-columns: auto;
+        justify-content: stretch;
+        margin-top: 30px; 
+    }
+    .stats-card-lg{
+        margin-top: 30px;
+        width: 88%;
+        
+    }
+
+    #overview-wrapper{
+        height: 100%;
+        margin-top: 1000px;
+    }
+    .stats-card-sm{
+        width: 90%;
+    }
+    
+}
