@@ -14,10 +14,12 @@ body {
   font-family: "Work Sans", sans-serif;
   background: #1e202a;
   color: #ffffff;
+  transition: background-color 600ms ease-in;
 }
 .container {
   width: 80%;
   margin: auto;
+  
 }
 .red {
   color: #c4032a;
@@ -45,6 +47,7 @@ body {
   background-color: #1f212e;
   margin: 0;
   height: 260px;
+  transition: background-color 600ms ease-in;
 }
 .header-wrapper {
   height: 100px;
@@ -141,6 +144,7 @@ input:checked + .slider:before {
   padding: 20px;
   width: 220px;
   border-radius: 5px;
+  transition: background-color 600ms;
 }
 .stats-card-lg:hover {
   background: #2a2c3d;
@@ -188,6 +192,7 @@ input:checked + .slider:before {
 }
 .stats-card-sm:hover {
   background: #2a2c3d;
+  transition: background-color 600ms;
 }
 .stats-info {
   display: flex;

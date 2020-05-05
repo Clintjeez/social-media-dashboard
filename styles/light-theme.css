@@ -12,6 +12,7 @@
 }
 body {
   font-family: "Work Sans", sans-serif;
+  transition: background-color 600ms ease-in-out;
 }
 .container {
   width: 80%;
@@ -36,18 +37,13 @@ body {
   border-top: 3px solid #c4032a;
 }
 
-/* Styles for light goes here ======================*/
-
-.light-theme {
-  background-color: #fff;
-  color: #63687e;
-}
 
 /* Header and titles styling goes here */
 #header {
   background-color: #f5f7ff;
   margin: 0;
   height: 260px;
+  transition: background-color 600ms ease-in-out;
 }
 .header-wrapper {
   height: 100px;
@@ -144,6 +140,7 @@ input:checked + .slider:before {
 }
 .stats-card-lg:hover {
   background: #ced1da;
+  transition: background-color 600ms;
 }
 .stats-card-lg .stats-data {
   display: flex;
@@ -185,6 +182,7 @@ input:checked + .slider:before {
 }
 .stats-card-sm:hover {
   background: #ced1da;
+  transition: background-color 600ms;
 }
 .stats-info {
   display: flex;
